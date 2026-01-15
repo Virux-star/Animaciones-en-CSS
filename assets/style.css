@@ -63,5 +63,23 @@ body {
 
 @media (min-width: 768px) {
 
+  .layout {
+    grid-template-columns: 160px 1fr;
+    grid-template-areas:
+      "menu contenido"
+      "menu footer";
+    min-height: 100vh;
+  }
+
+  .menu {
+    align-items: flex-start;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    text-align: left;
   }
 }
